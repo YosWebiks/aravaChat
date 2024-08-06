@@ -28,6 +28,7 @@ namespace aravaChat.DAL
         {
             List<Message> messageList = new List<Message>();
             Message message = new Message { text = "Hey y'all!", created_at = DateTime.Now, sender = user };
+            messageList.Add(message);
             Messages.Add(message);
             return messageList;
         }

@@ -57,7 +57,7 @@ namespace aravaChat.Controllers
             Response.Cookies.Append("user_name", user.user_name);
             Response.Cookies.Append("password", user.password);
 
-            return RedirectToAction("Chat");
+            return RedirectToAction(nameof(Chat));
         }
         public IActionResult Chat()
         {
