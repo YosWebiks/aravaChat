@@ -10,11 +10,17 @@ namespace aravaChat.Models
         }
 
         [Key]
-        public int id;
-        public string user_name = "";
-        public string password = "";
-        public string nick_name = "";
-        public List<Message> messages;
+        public int id { get; set; }
+
+        [Display(Name = "User Name")]
+        public string user_name { get; set; } = "";
+
+        [Display(Name = "Password")]
+        public string password { get; set; } = "";
+
+        [Display(Name = "Nick Name")]
+        public string nick_name { get; set; } = "";
+        public List<Message> messages { get; set; }
 
     }
 }

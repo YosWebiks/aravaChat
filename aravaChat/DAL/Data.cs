@@ -3,7 +3,7 @@
     public class Data
     {
         // מחרוזת חיבור לבסיס הנתונים
-        string ConnectionString = "server=DANIEL\\SQLEXPRESS;initial catalog=shabat; user id=sa;password=1234; TrustServerCertificate=Yes";
+        string ConnectionString = "server=YOSIWEBIKS\\SQLEXPRESS;initial catalog=AravaChat; user id=sa;password=1234; TrustServerCertificate=Yes";
 
         // קונסטרקטור פרטי למניעת יצירת מופעים מחוץ למחלקה
         private Data()
@@ -14,7 +14,7 @@
 
 
         // משתנה סטטי לשמירת מופע יחיד של המחלקה
-        static Data GetData;
+        static Data? GetData;
 
         // מאפיין סטטי לקבלת שכבת הנתונים
         public static DataLayer Get

@@ -8,6 +8,6 @@ namespace aravaChat.Models
         public int id { get; set; }
         public string text { get; set; } = "";
         public User? sender { get; set; }
-        public DateTime? createdAt { get; set; }
+        public DateTime? created_at { get; set; }
     }
 }
