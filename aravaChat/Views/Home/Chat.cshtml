@@ -18,6 +18,9 @@
 				ID
 			</th>
 			<th>
+				Name
+			</th>
+			<th>
 				Message
 			</th>
 			<th>
@@ -32,6 +35,9 @@
 			<tr>
 				<td>
 					@Html.DisplayFor(modelItem => item.id)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.sender.nick_name)
 				</td>
 				<td>
 					@Html.DisplayFor(modelItem => item.text)
@@ -51,8 +57,7 @@
     <div class="form-group">
         <label asp-for="message.text" class="control-label"></label>
 		<input asp-for="message.text" class="form-control" />
-		<span asp-validation-for="message.text" class="text-danger"></span>
-        <input type="submit" value="Send" class="btn btn-primary" />
+        <input type="submit" value="Send" class="btn btn-primary form-control mt-3" />
     </div>
    
     </div>
